@@ -1,0 +1,95 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #d3d4d6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:hover,
+.input-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+.mensagem-status {
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+.mensagem-status.erro {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.mensagem-status.sucesso {
+    color: #28a745;
+    font-weight: bold;
+}
+
+#btnEnviar {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#btnEnviar:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+#btnEnviar:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    transform: none;
+}
