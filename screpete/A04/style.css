@@ -1,0 +1,97 @@
+/**Estil9o geral para o corpo do site*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/*CABEÇALHO*/
+/*Estilos gerais do cabeçalho*/
+.cabecalho-site {
+    display: flex; /*permite que os elemnetos dentro de um container sejam organizados de forma flexiveil, permite ajustar o alinhamento e a distribuição de esopaço*/
+    justify-content: space-between; /*ajustar os itens nas extremidades*/
+    align-items: center; /*alinha os itens no centro vertical*/
+    background-color: #333; /*cor do plano de fundo*/
+    color: #fff; /*cor da fonte*/
+    padding: 50px;/*espaço interno entre o conteudo do elemento*/
+}
+
+.cabecalho-site h1{
+    margin: 0;
+
+}
+
+.cabecalho-site nav a{
+    color: #fff;
+    text-decoration: none;/*formatação do texto*/
+    margin-left: 20px;
+}
+
+/*CONTEÚDO PRINCIPAL*/
+/*estilos aplicados com conteudo princípal di site*/
+
+.conteudo-principal{
+    display: flex;
+    flex-wrap: wrap; /*permite que as seções   quebrem linha*/
+    justify-content: center; /*centraliza as seções*/
+    gap: 20px; /*espços externos entre as seções*/
+    padding: 20px; /*espaços internos entre os elementos de uma seção*/
+}
+
+.caixa-conteudo{
+    background-color:silver;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px black;
+    flex: 1 1 300px; /*1 -> seção cresce até ocupar todo espaço disponível
+    1-seção diminui para ocupar o espaço disponível 
+    300px - determina o valor inicial, tamanho base da largura*/
+    text-align: justify;
+}
+
+.rodape-site{
+    background-color:silver;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px black;
+    flex: 1 1 300px; /*1 -> seção cresce até ocupar todo espaço disponível
+    1-seção diminui para ocupar o espaço disponível 
+    300px - determina o valor inicial, tamanho base da largura*/
+    text-align: center;
+}
+
+/*medía quary -> funciona como um "se, então" para a responsividade,
+de froma que: se o site tivera dimensão X, então algum ajuste
+será aplicado no layout para garantir a consistência e visibilidade das informações*/
+
+@media screen and (max-width: 633px){
+    .cabecalho-site{
+        flex-direction: column; /*em telas menores, o cabeçalho se empilha*/
+    }
+
+    .cabecalho-site nav{
+        margin-top: 10px;
+    }
+}
+
+.links:hover{
+    color: bisque;
+    text-decoration: underline ;
+    cursor: pointer;
+}
+
+.botao{
+    background-color:#757474;
+    color: snow;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s ;
+}
+
+.botao:hover{
+    background-color: rgb(0, 0, 0);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px #333;
+}

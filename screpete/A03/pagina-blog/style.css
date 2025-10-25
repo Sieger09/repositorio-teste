@@ -1,0 +1,109 @@
+/*reset basico da tela*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+p {
+    color: pink;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+/*Aplicando estilos do cabeçalho*/
+.cabecalho-blog {
+    background-color: darkcyan;
+    padding: 40px 0px;
+    /*espaçamentos entre os elementos*/
+    border-bottom: 20px solid aquamarine;
+    display: flex;
+}
+
+.cabecalho-blog h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: bisque;
+}
+
+.cabecalho-blog a {
+    text-decoration: none;
+    /*tira a formatação de link do HTML*/
+    color: inherit;
+    /*ela tira cor vermelha de qunado clicamos no link*/
+
+}
+
+.cabecalho-blog ul {
+    list-style: none;
+    /*tira a "bolinha" ou troca no topico*/
+    display: flex;
+    /*transforma a lista num container flexivel*/
+    gap: 20px;
+    /*adiciona uma espaço entre cada item da lista*/
+}
+
+/*estilos de layout pricipal e conteúdo*/
+.conteudo-principal-blog {
+    padding: 20px 0;
+    /*ajusta o espaçamento entre o cabeçalho e conteudo*/
+
+}
+
+.layout-blog {
+    display: flex;
+    /* vai permitir que a gente consiga colocar uma barra lateral*/
+    gap: 30px;
+}
+
+.post {
+    flex: 3;
+    background-color: darkcyan;
+    border-radius: 10px;
+    box-shadow: 0 4px 5px aquamarine;
+}
+
+.post h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.post p {
+    color: pink;
+    font-size: small;
+}
+
+.barra-lateral {
+    background-color: darkcyan;
+    border-radius: 10px;
+    box-shadow: 0 4px 5px aquamarine;
+}
+
+.barra-lateral ul {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.barra-lateral ul {
+    list-style: none;
+}
+
+.rodape-blog {
+    background-color: palevioletred;
+    border-radius: 10px;
+    box-shadow: 0 4px 5px aquamarine;
+}
+
+.rodape-blog {
+    text-align: center;
+    padding: 20px;
+    background-color: darkcyan;
+    font-size: smaller;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
